@@ -1,10 +1,22 @@
-- 👋 Hi, I’m @SB-SLIM
-- 👀 I’m interested in MERN stack
-- 🌱 I’m currently learning Typescript
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me: Discord Slim_Bouchoucha#9749
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=SB-SLIM)](https://github.com/anuraghazra/github-readme-stats)
 
-<!---
-SB-SLIM/SB-SLIM is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+<!--START_SECTION:waka-->
+name: Waka Readme
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Runs at every 12AM UTC
+    - cron: "0 0 * * *"
+
+jobs:
+  update-readme:
+    name: Update this repo's README
+    runs-on: ubuntu-latest
+    steps:
+      - uses: athul/waka-readme@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          SHOW_TITLE: true
+          BLOCKS: ⣀⣄⣤⣦⣶⣷⣿
+<!--END_SECTION:waka-->
